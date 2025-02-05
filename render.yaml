@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: translation-api
+    repo: github.com/your-username/translation-api  # Replace with your repo URL
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn --bind 0.0.0.0:$PORT app:app"
+    env: python
+    plan: free  # or 'starter' if you need more resources
