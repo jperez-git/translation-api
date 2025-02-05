@@ -1,7 +1,7 @@
 services:
   - type: web
     name: translation-api
-    repo: github.com/your-username/translation-api  # Replace with your repo URL
+    repo: github.com/jperez-git/translation-api  # Replace with your repo URL
     buildCommand: "pip install -r requirements.txt"
     startCommand: "gunicorn --bind 0.0.0.0:$PORT app:app"
     env: python
